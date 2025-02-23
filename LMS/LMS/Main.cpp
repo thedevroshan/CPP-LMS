@@ -64,7 +64,12 @@ int main() {
 				std::getline(std::cin, bookName);
 				library->AddBooks(bookName);
 				break;
-		default:
+			case 2:
+				std::cout << "Book Name-> ";
+				std::getline(std::cin, bookName);
+				library->DeleteBook(bookName);
+				break;
+;		default:
 			break;
 		}
 	}
